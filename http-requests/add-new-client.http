@@ -1,0 +1,11 @@
+﻿### GET request to example server
+POST http://localhost:5000/products
+Content-Type: application/json
+
+{
+  "name": "{{$random.alphabetic(20)}}",
+  "description": "{{$random.alphabetic(20)}}",
+  "price": "{{$randomInt}}"
+}
+
+###
